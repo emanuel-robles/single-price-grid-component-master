@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+:root{
+
+    --Desaturated-Red: hsl(0, 36%, 70%);
+    --Soft-Red: hsl(0, 93%, 68%);
+    --Dark-Grayish-Red: hsl(0, 6%, 24%);
+    --gradient-1:hsl(0, 100%, 100%);
+    --gradient-2:hsl(0, 100%, 98%);
+    --gradient-3:hsl(0, 80%, 86%);
+    --gradient-4:hsl(0, 74%, 74%);
+
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+color: var(--Desaturated-Red);
+
+}
+.container{
+   
+    width: 375px;
+    height: 800px;
+    margin: 0 auto 80px;
+    background-color: var(--gradient-2);
+}
+.container__logo{
+    width: 100px;
+    margin: 30px;
+}
+.container__picture{
+    margin-bottom: 60px;
+}
+.container__content__title{
+text-align: center;
+text-transform: uppercase;
+font-size: 2.5em;
+color: var(--Dark-Grayish-Red);
+font-weight: 700;
+letter-spacing: 11px;
+margin-bottom: 30px;
+}
+.container__content__title--color-red{
+    color: var(--Desaturated-Red);
+    font-weight: 300;
+}
+.container__content__description{
+    margin: 0 40px 40px;
+    text-align: center;
+    font-size: 0.85em;
+    line-height: 1.4em;
+}
+.container__content__form{
+width: 310px;
+height: 50px;
+margin: auto;
+position: relative;
+}
+.container__content__form__email{
+width: 100%;
+height: 100%;
+border-radius: 50px;
+padding-left: 16px;
+border: 1px solid var(--Desaturated-Red);
+outline: none;
+/*background-image: url(./images/icon-error.svg); */
+background-repeat: no-repeat;
+background-position: 210px;
+
+}
+.container__content__form__email::placeholder{
+color: var(--Desaturated-Red);
+}
+.container__content__form__button{
+    position: absolute;
+    right: 0;
+    width: 68px;
+    height: 50px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, var(--gradient-3), var(--gradient-4));
+    padding: 14px 25px;
+}
+.container__content__form__button:hover{
+    background: linear-gradient(135deg, var(--gradient-2), var(--gradient-4));
+    box-shadow: 0 10px 15px var(--gradient-4);
+}
+.container__content__form__email--error{
+    font-size: 0.85em;
+    margin: 8px 0 0 14px;
+    color: var(--Soft-Red);
+}
+
+.attribution { 
+    font-size: 18px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+/*-----------Desktop-------------------------*/
+@media (min-width: 1440px){
+.container{
+    background-color: black;
+} 
+}
